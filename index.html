@@ -4,6 +4,14 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Alyssa Loquias | Executive Assistant, Admin & Operations Specialist</title>
+
+  <!-- Swirly Calligraphic "A" Favicon -->
+  <link
+    rel="icon"
+    type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23090D16'/%3E%3Crect x='2' y='2' width='60' height='60' rx='14' fill='none' stroke='%232B5B84' stroke-width='2.5'/%3E%3Cg transform='translate(6, 10) scale(0.054)' fill='%23F8FAFC'%3E%3Cpath d='M 476 113 C 397 109 306 135 280 202 C 266 238 273 277 303 298 C 331 318 370 321 407 323 C 378 313 335 302 316 276 C 299 252 303 215 325 190 C 367 143 465 139 587 157 C 687 172 786 196 865 212 C 742 252 638 358 556 492 C 463 644 373 766 226 783 C 127 794 53 746 53 662 C 53 582 126 523 224 529 C 325 535 426 604 533 632 C 628 657 729 634 776 575 C 814 527 803 458 751 423 C 682 377 547 386 422 465 C 455 452 505 435 559 429 C 642 420 723 443 752 488 C 774 523 759 573 713 597 C 655 627 567 617 472 578 C 366 534 265 487 167 492 C 81 497 25 558 25 656 C 25 764 114 824 234 812 C 349 801 434 717 506 602 C 527 654 558 708 618 755 C 656 785 693 807 724 819 C 685 776 655 717 645 642 C 718 475 811 284 934 222 C 954 212 973 207 989 205 C 958 197 922 189 885 182 C 749 154 598 119 476 113 Z M 856 233 C 774 289 704 401 649 529 C 643 570 644 607 650 641 C 696 526 765 376 856 233 Z'/%3E%3C/g%3E%3C/svg%3E"
+  />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -88,10 +96,13 @@
       display: inline-flex;
       align-items: center;
       justify-content: center;
-      font-family: var(--serif);
-      font-size: 1.25rem;
-      font-weight: 400;
       border: 1px solid var(--blue-primary);
+    }
+
+    .brand-badge svg {
+      width: 22px;
+      height: 22px;
+      display: block;
     }
 
     .nav-links {
@@ -906,7 +917,11 @@
   <header>
     <div class="container nav-inner">
       <a href="#home" class="brand">
-        <span class="brand-badge">A</span>
+        <span class="brand-badge" aria-hidden="true">
+          <svg viewBox="0 0 1000 900" fill="currentColor">
+            <path d="M 476 113 C 397 109 306 135 280 202 C 266 238 273 277 303 298 C 331 318 370 321 407 323 C 378 313 335 302 316 276 C 299 252 303 215 325 190 C 367 143 465 139 587 157 C 687 172 786 196 865 212 C 742 252 638 358 556 492 C 463 644 373 766 226 783 C 127 794 53 746 53 662 C 53 582 126 523 224 529 C 325 535 426 604 533 632 C 628 657 729 634 776 575 C 814 527 803 458 751 423 C 682 377 547 386 422 465 C 455 452 505 435 559 429 C 642 420 723 443 752 488 C 774 523 759 573 713 597 C 655 627 567 617 472 578 C 366 534 265 487 167 492 C 81 497 25 558 25 656 C 25 764 114 824 234 812 C 349 801 434 717 506 602 C 527 654 558 708 618 755 C 656 785 693 807 724 819 C 685 776 655 717 645 642 C 718 475 811 284 934 222 C 954 212 973 207 989 205 C 958 197 922 189 885 182 C 749 154 598 119 476 113 Z M 856 233 C 774 289 704 401 649 529 C 643 570 644 607 650 641 C 696 526 765 376 856 233 Z" />
+          </svg>
+        </span>
         <span>Alyssa Loquias</span>
       </a>
       <nav class="nav-links">
